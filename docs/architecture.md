@@ -1,4 +1,7 @@
 # Architecture Overview – IAM Role & Policy Management
+<img width="355" height="571" alt="Architecure drawio" src="https://github.com/user-attachments/assets/ddbdcd43-c777-4920-9ae8-d733af1f1f36" />
+
+*Figure 1: IAM role-based access architecture enforcing least-privilege access from EC2 to S3.*
 
 ## Objective
 The objective of this architecture is to securely grant an EC2 instance
@@ -11,20 +14,10 @@ No long-term credentials are stored on the EC2 instance.
 ---
 
 ## High-Level Architecture
+As shown in Figure 1, an IAM role with a custom read-only policy is attached to
+an EC2 instance, allowing secure, scoped access to a specific S3 bucket without
+the use of long-term credentials.
 
-User (Admin)
-   |
-   v
-AWS IAM
-   |-- IAM User (management access)
-   |-- IAM Policy (S3 Read-Only)
-   |-- IAM Role (assumed by EC2)
-   |
-   v
-Amazon EC2
-   |
-   v
-Amazon S3 (Read-Only Access)
 
 ---
 
