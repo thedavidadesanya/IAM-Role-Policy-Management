@@ -43,3 +43,9 @@ Separates human access from service-level permissions.
 ```json
 s3:ListBucket
 s3:GetObject
+
+## Additional Documentation
+
+A full project walkthrough and security analysis is available here:
+
+https://medium.com/@davidace200/how-to-implement-least-privilege-iam-access-using-aws-roles-policies-c9ed8605d9da
