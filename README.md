@@ -48,3 +48,13 @@ without granting excessive permissions.
 Allowed action:
 ```bash
 aws s3 ls s3://example-bucket
+
+---
+
+## Blog Write-Up
+
+A detailed walkthrough of this project, including design decisions,
+security considerations, and lessons learned, is available on Medium:
+
+👉 **How To Implement Least-Privilege IAM Access Using AWS Roles & Policies**  
+https://medium.com/@davidace200/how-to-implement-least-privilege-iam-access-using-aws-roles-policies-c9ed8605d9da
